@@ -26,3 +26,7 @@ I work in AVELCON company.
   alert( result );
   ```
 ## Experience
+  - **University**: Mordovian State University, Magistr of the Electronic and Nanoelectronic.
+
+## English
+**A1** 
