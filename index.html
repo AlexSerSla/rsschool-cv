@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>CV</title>
+    <title>CV Aleksandr Slavkin</title>
 </head>
 <body>
     <header class="header">
@@ -30,26 +30,29 @@
 
     <main class="main">
       <div class="container main-container">
-        <section class="section" id="profile">
-          <img src="./assets/avatar_Fry.jpeg" alt="avatar">
-        </section>
+        
+          <div class="section section-first">
+            <img class="section-avatar" src="./assets/avatar_Fry.jpeg" alt="avatar" >
+          </div>
 
-        <section class="section" id="profile">
-          <h1 class="section-title"> Aleksandr Slavkin</h1>
-        </section>
+          <section class="section section-first" id="profile">
+            <h1 class="section-title section-name"> Aleksandr Slavkin</h1>
+          </section>
 
-         <section class="section" id="contacts">
+          <div class="section section-border"></div>
+      
+         <section class="section section-first" id="contacts">
            <h2 class="section-title">Contacts</h2>
 
            <ul class="section-list">
-              <li class="section-item">Location: Saransk, Russia</li>
-              <li class="section-item">Phone: +7937-xxx-xx-xx</li>
-              <li class="section-item">Email: slavckin2009@yandex.ru</li>
-              <li class="section-item">GitHub: AlexSerSla</li>
+              <li class="section-item"><span class="text-bold">Location:</span> Saransk, Russia</li>
+              <li class="section-item"><span class="text-bold">Phone:</span> +7937-xxx-xx-xx</li>
+              <li class="section-item"><span class="text-bold">Email:</span> slavckin2009@yandex.ru</li>
+              <li class="section-item"><span class="text-bold">GitHub:</span> AlexSerSla</li>
             </ul>
           </section>
           
-          <section class="section" id="about-me">
+          <section class="section section-about" id="about-me">
             <h2 class="section-title">About Me</h2>
 
             <p>
@@ -58,6 +61,7 @@
               I work in AVELCON company.
             </p>            
           </section>
+        
         
           <section class="section" id="skills">
             <h2 class="section-title">Skills</h2>
@@ -72,21 +76,20 @@
           <section class="section" id="code-example">
             <h2 class="section-title">Code Example</h2>
 
-            <p>
-            function mul(a, b) {
-            return a * b;
-            }
-        
-            let result = mul(1, 2);
-            alert( result );
-            </p>
+            <pre>
+  <code>function mul(a, b) {
+    return a * b;
+  }
+            
+  let result = mul(1, 2);
+  alert( result );</code></pre>
           </section>
             
           <section class="section" id="education">
             <h2 class="section-title">Education</h2>
 
             <p>
-              University: Mordovian State University, Magistr of the Electronic and Nanoelectronic.
+              <span class="text-bold">University:</span> Mordovian State University, Magistr of the Electronic and Nanoelectronic.
             </p>
           </section>
 
@@ -105,9 +108,11 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <div>© 2022 <a href="https://github.com/alexsersla" class="github nav-link">AlexSerSla</a></div>
-        <a href="https://rs.school/js/" class="link-rss">Ссылка на RS School</a>
+      <div class="container footer-container">
+        <div>
+          © 2022 <a href="https://github.com/alexsersla" class="github">AlexSerSla</a>
+        </div>
+        <a href="https://rs.school/js/" class="link-rss"></a>
       </div>
 
     </footer>

@@ -20,20 +20,15 @@ body {
 }
 
 .header {
-    border: 1px solid red;
+    background-color: #829985;
 
 }
 
-.main {
-    border: 1px solid red;
-
-}
-
-.footer {
-    border: 1px solid red;
-    height: 100px;
-    background-color: #b3b1b0;
-
+.footer {    
+    /*height: 100px;*/
+    padding: 10px;
+    background-color: #829985;
+    color: whitesmoke;
 }
 
 .container {
@@ -52,17 +47,16 @@ body {
    padding: 0 20px;
    line-height: 50px;
    text-decoration: none;
-   color: black;
    transition: .3s;
 }
 
   .nav-item a {
-    color: #88746b;
+    color: whitesmoke;
     text-decoration: none;  
     transition: color 0.5s;
   }
   .nav-item a:hover {
-    color: #e71a1a;
+    color:#b3b1b0;
   }
 
   .main-container {
@@ -70,9 +64,28 @@ body {
     flex-wrap: wrap;
   }
   
+  #profile {
+    display: flex;
+  }
+
   .section {
-    width: 50%;
-    padding: 0 10px
+    width: calc(50% - 20px);
+    padding: 10px 10px 30px 10px;
+    margin: 0 10px;
+    border-top: 1px solid black ;
+  }
+
+  .section-first{
+    border-top: none;
+  }
+
+  .section-about {
+    border-top: none;
+  }
+
+  .section-avatar {
+    display:block;
+    margin: 0 auto;
   }
 
   .section-title {
@@ -81,6 +94,27 @@ body {
     text-transform:uppercase;
     letter-spacing: 5px;
     color: #829985;
+  }
+
+  .section-name {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+    color: black;
+  }
+
+  .text-bold {
+    font-weight: 600;
+  }
+
+  .section-border {
+    width: 95%;
+    height: 10px;
+    padding: 0;
+    margin: 0 auto;
+    background-color:rgb(97, 128, 118);
+    /*border: 1px solid rgb(50, 196, 21);*/
   }
 
   .section-list {
@@ -104,8 +138,25 @@ body {
     border-radius: 50%;
   }
 
+  .footer-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;;
+  }
+
+  .github {
+    color: whitesmoke;
+    padding-left: 10px;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  .github:hover {
+    color:#b3b1b0;
+  }
+
 .link-rss {
-    width: 121px;
+    width: 100px;
     height: 45px;
     background-image: url(/assets/RSS.png);
     background-size: contain;
@@ -115,8 +166,16 @@ body {
 
 
 
-  @media (max-width: 768px) {
+  @media (max-width: 773px) {
     .section {
       width: 100%;
     }
+
+    .nav-list {
+      display: block;
+    }
+    .section-about {
+      border-top: 1px solid black;
+    } 
+
   }
